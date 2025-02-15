@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<style>
+  .btn-cyan{
+    background-color: cyan;
+    color: black;
+  }
+</style>
+</head>
+<body style="background-color: black;">
+  <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" style="background-color: black;">
+    <div class="container">
+      <a class="navbar-brand" href="#" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><img src="https://uzmovi.tv/images/logo.gif" alt="UZMOVi onlayn kinoteatri"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-1"></div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Bosh sahifa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kinolar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu-1</a></li>
+              <li><a class="dropdown-item" href="#">Menu-2</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Menu-3</a></li>
+            </ul>
+          </li>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Seriallar</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Janr</a>
+      </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#">Kino yangiliklari</a>
+    </li>
+        </ul>
+          <button class="btn btn-warning m-2" data-bs-toggle="modal" data-bs-target="#Modal2">Sign In</button>
+          <button class="btn m-2 btn-cyan" data-bs-toggle="modal" data-bs-target="#Modal">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+<br>
+<style>.flex-history ul li img{
+border-radius: 50%;
+border: 1px solid cyan;
+margin-right: 5px;
+transition: .3s;
+}
+.flex-history ul li img:hover{
+  position: relative;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.flex-history ul{
+list-style: none;
+overflow-y: auto;
+
+}
+::-webkit-scrollbar {
+  width: 1px; /* Gorizontal scroll uchun height, vertikal scroll uchun width */
+  height: 1px; /* Gorizontal scroll uchun width */
+}
+
+.form{
+    width: 70%;
+    margin-left: 15%;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    border-radius: 19px;
+    padding: 2px;
+}
+.form input{
+border: none;
+outline: none;
+width: 95%;
+max-height: 100%;
+margin: auto;
+background: transparent;
+color: white;
+padding-left: 15px;
+}
+
+.two{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.two i{
+font-size: 18px;
+color: blue;
+cursor: pointer;
+}
+
+
+</style>
+<div class="flex-history d-flex container">
+<ul style="display: flex;">
+  <li><img src="https://story.uzmovi.tv/2025-02-09/80x80_1739061411_01886279e637a626ff81.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-04/80x80_1738674006_4f2bc1a538e6f84accb9.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738606081_18b6711b68c59ed9d9d3.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738606021_f3f6dd1b74ae425b438c.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738605966_f5845c718ebfd43874cb.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737286699_84121a149fb68c9be962.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737277621_01e2739b3353e5ea0fcc.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737277672_75ec9b0d93c4112626c7.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-09/80x80_1739061411_01886279e637a626ff81.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-04/80x80_1738674006_4f2bc1a538e6f84accb9.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738606081_18b6711b68c59ed9d9d3.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738606021_f3f6dd1b74ae425b438c.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738605966_f5845c718ebfd43874cb.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737286699_84121a149fb68c9be962.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737277621_01e2739b3353e5ea0fcc.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737277672_75ec9b0d93c4112626c7.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-09/80x80_1739061411_01886279e637a626ff81.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-04/80x80_1738674006_4f2bc1a538e6f84accb9.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738606081_18b6711b68c59ed9d9d3.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738606021_f3f6dd1b74ae425b438c.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-02-03/80x80_1738605966_f5845c718ebfd43874cb.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737286699_84121a149fb68c9be962.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737277621_01e2739b3353e5ea0fcc.jpg" alt=""></li>
+  <li><img src="https://story.uzmovi.tv/2025-01-19/80x80_1737277672_75ec9b0d93c4112626c7.jpg" alt=""></li>
+</ul>
+</div>
+<br>
+  <div class="container">
+    
+    <div class="form">
+  <input type="search" placeholder="Qidirish...">
+  <div class="two">
+      <i class="bi bi-search"></i>
+  </div>
+</div>
+    
+    <br>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://avatars.mds.yandex.net/i?id=f3330acc5957a398d1ba28ca316c7a7a_l-12602658-images-thumbs&n=13" class="d-block w-100" alt="Terminator 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Terminator 2</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://avatars.mds.yandex.net/i?id=f236f9df27e89ed5b0b0d64be25e12379a48d2ee-8497411-images-thumbs&n=13" class="d-block w-100" alt="Commando">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Commando</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/2262910/pub_60916835a38d215d4e18987e_60916a61a38d215d4e1ff4b0/scale_1200" class="d-block w-100" alt="Kapitan Aerika">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kapitan Aerika</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://avatars.mds.yandex.net/i?id=573f6fcd346be4e8680b1b6407e1febb614477c4-10879773-images-thumbs&n=13" class="d-block w-100" alt="Forsaj">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Forsaj</h5>
+                    <p>Some representative placeholder content for the fourth slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/kk1tnt5srQD3eS0q1UYSBQ/738x415.jpg" class="d-block w-100" alt="Legion">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Legion</h5>
+                    <p>Some representative placeholder content for the fifth slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {interval: 4000,wrap: true,ride: 'carousel'});
+    </script>
+  </div>
+
+
+
+
+<br><br>
+  <div class="container d-flex" style="justify-content: center;">
+    <div class="card" style="margin-right: 10px;width: 18rem;">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.zastavki.com/pictures/286x180/2014/Men___Male_Celebrity_Jason_Statham_with_a_gun_056907_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.zastavki.com/pictures/286x180/2014/Fantasy_A_police_officer_Joker_086451_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.zastavki.com/pictures/286x180/2019Movies_Character_Joker_with_a_gun_in_his_hand_on_a_gray_background_130831_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+        </div></div>
+                <div class="card-body bg-dark text-light">
+        <h5 class="card-title">Shooting Film</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go Play</a>
+      </div>
+    </div>
+
+
+    <div class="card" style="margin-right: 10px;width: 18rem;">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://avatars.mds.yandex.net/i?id=883614450f24d8bf5a907e99561528e9_sr-5476823-images-thumbs&n=13" class="d-block w-100 card-img-top" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.zastavki.com/pictures/286x180/2014/Men___Male_Celebrity_Actor_Jet_Li_056939_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://avatars.mds.yandex.net/i?id=cf51c74089e7c768a0fc4b4fb1a590ad-5916168-images-thumbs&n=13" class="d-block w-100 card-img-top" alt="...">
+          </div>
+        </div></div>
+                <div class="card-body bg-dark text-light">
+        <h5 class="card-title">Fight Film</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go Play</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://avatars.mds.yandex.net/i?id=affb9cefa2a45ba652abc3dc2ce5ee4f_sr-4589472-images-thumbs&n=13" class="d-block w-100 card-img-top" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.zastavki.com/pictures/286x180/2012/Movies_Scrubs_010543_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.zastavki.com/pictures/286x180/2012/Movies_Hot_Fuzz_010021_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+        </div></div>
+                <div class="card-body bg-dark text-light">
+        <h5 class="card-title">Comedy Film</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go Play</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;margin-left: 10px;">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.zastavki.com/pictures/286x180/2012/Movies_Halloween_009943_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.zastavki.com/pictures/286x180/2014/Fantasy_The_evil_vampire_girl_091779_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.zastavki.com/pictures/286x180/2018Movies_The_character_of_the_new_movie_The_Last_Night._Beginning__2018_125117_32.jpg" class="d-block w-100 card-img-top" alt="...">
+          </div>
+        </div></div>
+        <div class="card-body bg-dark text-light">
+          <h5 class="card-title">Horror Film</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go Play</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <br>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Ro'yxatdan o'tish</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <label for="">Ism familiyangiz:</label>
+          <input type="text" class="form-control">
+          <label for="">Username</label>
+          <input type="text" class="form-control">
+          <label for="">Email:</label>
+          <input type="email" class="form-control">
+          <label for="">Password</label>
+          <input type="password" class="form-control">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+        <button type="button" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- off -->
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        I will not close if you click outside of me.
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Kirish</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <label for="">Login</label>
+            <input type="text" class="form-control">
+            <label for="">Password</label>
+            <input type="password" class="form-control">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+          <button type="button" class="btn btn-primary">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+
+    <div class="col-9 border rounded">
+      <div class="row">
+        <div class="col-3">
+          <img class="w-100" src="https://www.zastavki.com/pictures/286x180/2014/Fantasy_A_police_officer_Joker_086451_32.jpg" alt="">
+        </div>
+        <div class="col-9">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum sit provident quis vero omnis ipsam quae, molestiae adipisci modi rerum dolor, soluta vel! Libero inventore dolor repellendus quis dolorum!
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
